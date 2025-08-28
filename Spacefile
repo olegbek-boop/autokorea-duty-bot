@@ -1,0 +1,16 @@
+v: 0
+micros:
+  - name: bot
+    src: .
+    engine: python3.11
+    primary: true
+    run: uvicorn main:app --host=0.0.0.0 --port=8000
+    env:
+      - BOT_TOKEN
+      - WEBHOOK_SECRET
+      - EUR_RUB
+      - KRW_RUB
+      - DELIVERY_RUB
+      - BROKER_RUB
+      - SBKTS_RUB
+      - EXTRA_RUB
